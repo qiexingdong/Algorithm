@@ -1,4 +1,9 @@
 # 通用知识点
 ## vector容器
 ## stack栈
+* push()入栈
+* pop()出栈
+* top()获得栈顶元素
+* empty()检测栈内是否为空
+* size()获得栈内元素个数
 ## queue队列
