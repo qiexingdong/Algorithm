@@ -6,5 +6,6 @@
 * 在大于1的自然数中，除了1和它本身外不再有其他因数的自然数
 ### 万能头文件
 * #include <bits/stdc++.h>
-###stack和queue的用法
-* stack：
+### stack和queue的常见用法
+* stack : top()获取栈顶元素，push()入栈，pop()出栈，size()栈内元素个数，empty()判空
+* queue : front()获取队列第一个元素，back()获取队列最后一个元素，push()入队，pop()出队，size()队列内元素个数，empty()判空
