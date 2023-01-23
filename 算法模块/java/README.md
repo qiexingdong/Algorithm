@@ -1,6 +1,7 @@
 # 目录
 - [重写equals方法](#重写equals方法)
 - [冒泡排序](#冒泡排序)
+- [空心菱形](#空心菱形)
 - [](#)
 ***
 ### 重写equals方法
@@ -35,7 +36,41 @@ public class hello{
  }
 }
 ```
-
+### 空心菱形
+``` java
+public class switch01{ 	
+public static void main(String[] args){
+                                int num = 10;
+		for(int i = 1;i<=num;i++){
+			for(int k = 1;k<=num-i;k++){
+         	   System.out.print(" ");
+			}
+			for(int j=1;j<=2*i-1;j++){
+				if(j==1||j==2*i-1){
+               System.out.print("*");
+           		}else{
+           			System.out.print(" ");
+           		}
+			}
+			 System.out.print("\n");
+		}
+       	for(int i=num-1;i>=1;i--){
+			for(int k = 1;k<=num-i;k++){
+         	   System.out.print(" ");
+			}
+			for(int j=1;j<=2*i-1;j++){
+          		if(j==1||j==2*i-1){
+               System.out.print("*");
+           		}
+           		else{
+           		System.out.print(" ");
+           		}
+			}
+			 System.out.print("\n");
+		}
+	}
+}
+```
 
 ### 
 ``` java
