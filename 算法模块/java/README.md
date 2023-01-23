@@ -2,6 +2,7 @@
 - [重写equals方法](#重写equals方法)
 - [冒泡排序](#冒泡排序)
 - [空心菱形](#空心菱形)
+- [数组扩容](#数组扩容)
 - [](#)
 ***
 ### 重写equals方法
@@ -72,6 +73,27 @@ public static void main(String[] args){
 }
 ```
 
+### 数组扩容
+``` java
+Scanner myscanner = new Scanner(System.in);
+        int arr[]= {1,2,3};
+        do{
+        int arrnew[]= new int[arr.length+1];
+        for(int i = 0 ; i < arr.length ; i++)
+        	arrnew[i]=arr[i];
+        System.out.println("请输入新添加的数");
+        int num = myscanner.nextInt();
+        arrnew[arrnew.length-1]=num;
+        arr = arrnew;
+        for(int i = 0 ; i < arr.length; i++)
+        	System.out.print(arr[i]+"\t");
+        System.out.println("是否还要再添加？ y/n");
+        char key = myscanner.next().charAt(0);
+        if(key=='n')	
+        break;	
+    	}while(true);
+		System.out.println("你退出了循环");
+```
 ### 
 ``` java
 
