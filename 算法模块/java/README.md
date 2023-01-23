@@ -3,6 +3,7 @@
 - [冒泡排序](#冒泡排序)
 - [空心菱形](#空心菱形)
 - [数组扩容](#数组扩容)
+- [java输入](#java输入)
 - [](#)
 ***
 ### 重写equals方法
@@ -93,6 +94,14 @@ Scanner myscanner = new Scanner(System.in);
         break;	
     	}while(true);
 		System.out.println("你退出了循环");
+```
+### java输入
+``` java
+import java.util.Scanner;
+        Scanner scanner1 = new Scanner(System.in);
+        int a = scanner1.nextInt();
+        String b = scanner1.next();
+        char c = scanner1.next().charAt(0);
 ```
 ### 
 ``` java
