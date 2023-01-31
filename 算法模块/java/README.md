@@ -144,6 +144,7 @@ public abstract class AbstractExercise {
 
     public void Num() {
         long start = System.currentTimeMillis();
+	calculate();
         long end = System.currentTimeMillis();
         System.out.println("耗时：" + (start - end));
     }
