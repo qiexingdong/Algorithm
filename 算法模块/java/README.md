@@ -4,6 +4,8 @@
 - [空心菱形](#空心菱形)
 - [数组扩容](#数组扩容)
 - [java输入](#java输入)
+- [单例模式](#单例模式)
+- [模板设计模式](#模板设计模式)
 - [](#)
 ***
 ### 重写equals方法
@@ -102,6 +104,69 @@ import java.util.Scanner;
         int a = scanner1.nextInt();
         String b = scanner1.next();
         char c = scanner1.next().charAt(0);
+```
+### 单例模式
+``` java
+//饿汉式
+    class Single {
+    private static Single instance = new Single();
+
+    private Single() {
+    }
+
+    public static Single GetInstance() {
+        return instance;
+    }
+}
+```
+  ``` java
+  //懒汉式
+  class Cat {
+
+    private static Cat instance;
+
+    private Cat() {
+
+    }
+
+    public static Cat GetInstance() {
+        if (instance == null) {
+            instance = new Cat();
+        }
+        return instance;
+    }
+  }
+  ```
+### 模板设计模式
+``` java
+public abstract class AbstractExercise {
+    public abstract void calculate();
+
+    public void Num() {
+        long start = System.currentTimeMillis();
+        long end = System.currentTimeMillis();
+        System.out.println("耗时：" + (start - end));
+    }
+}
+
+class A extends AbstractExercise {
+    @Override
+    public void calculate() {
+        int num = 0;
+        for (int i = 0; i <= 100000; i++) {
+            num += i;
+        }
+    }
+}
+class B extends AbstractExercise {
+    @Override
+    public void calculate() {
+        int num = 0;
+        for (int i = 0; i <= 800000; i++) {
+            num += i;
+        }
+    }
+}
 ```
 ### 
 ``` java
